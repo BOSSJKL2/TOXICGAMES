@@ -16,6 +16,38 @@ Bladeball:CreateButton("TELEPORT 😡", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Teleport%20Gui.lua"))()
 end)
 
+Bladeball:CreateButton("TELEPORT 😡", function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+game.Players.LocalPlayer.Character.Humanoid.Health = 100
+end)
 Bladeball:CreateButton("EXPLOIT JOINED 😡",
 function()
 loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
