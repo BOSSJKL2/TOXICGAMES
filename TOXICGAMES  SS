@@ -35,11 +35,12 @@ KeyBox.TextSize = 14.000
 GetKey.Name = "GetKey"
 GetKey.Parent = Frame
 GetKey.BackgroundColor3 = Color3.fromRGB(255, 112, 112)
+GetKey.BackgroundTransparency = 1
 GetKey.Position = UDim2.new(0.264887065, 0, 0.528846145, 0)
 GetKey.Size = UDim2.new(0, 228, 0, 33)
 GetKey.Font = Enum.Font.LuckiestGuy
 GetKey.LineHeight = 0.750
-GetKey.Text = "User - "..game.Players.LocalPlayer.Name
+GetKey.Text = "Hi! "..game.Players.LocalPlayer.Name
 GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
 GetKey.TextSize = 22.000
 
@@ -50,35 +51,12 @@ Enter.Position = UDim2.new(0.264887065, 0, 0.745192349, 0)
 Enter.Size = UDim2.new(0, 228, 0, 34)
 Enter.Font = Enum.Font.LuckiestGuy
 Enter.LineHeight = 0.750
-Enter.Text = "ENTER"
+Enter.Text = "EXECUTE"
 Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter.TextSize = 19.000
 Enter.MouseButton1Click:Connect(function()
-if GetKey.Text == "User - Tubers93HKRB" then
-		Frame.Visible = false
-		wait()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/BossJKLO-SECURITY-/main/BossSCURITY"))()
-end
-wait(0.01)
-if KeyBox.Text == "MUMMONEYSCRIPT" then
-		Frame.Visible = false
-		wait()
-                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
-                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
-                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
-                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
-                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/UPDBOSJKLSO/main/UPDBOSJKLSORANKS"))()
-                loadstring(game:HttpGet("https://pastebin.com/raw/RRG6wkdz"))()
-	end
-wait()
-if KeyBox.Text == "K00P" then
-		Frame.Visible = false
-		wait()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/Skid/main/S"))()
-end
+game.ReplicatedStorage.RemoteEvent:FireServer(KeyBox.Text)
 end)
-
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -149,3 +127,34 @@ local function LLCZL_fake_script() -- Frame.Smooth GUI Dragging
 	runService.Heartbeat:Connect(Update)
 end
 coroutine.wrap(LLCZL_fake_script)()
+local function PKIPWI_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
