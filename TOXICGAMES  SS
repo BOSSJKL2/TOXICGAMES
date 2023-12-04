@@ -178,3 +178,15 @@ local function PKIPWI_fake_script() -- Frame.LocalScript
 	end
 end
 coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- Enter.LocalScript 
+	local script = Instance.new('LocalScript', Enter)
+
+local remotes = script.Parent.Parent.Remotes
+
+script.Parent.MouseButton1Click:Connect(function()
+    local KeyBox = script.Parent.Parent.TextBox
+    remotes.EXecuteServer:FireServer(KeyBox.Text)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
