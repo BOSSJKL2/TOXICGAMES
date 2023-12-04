@@ -73,9 +73,11 @@ Enter.Text = "EXECUTE"
 Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter.TextSize = 19.000
 Enter.MouseButton1Click:Connect(function()
-script.Parent.OnServerEvent:Connect(function(plr,KeyBox)
-	local loadstringz = require(script.Loadstring)
-	loadstringz(KeyBox)()
+local remotes = script.Parent.Parent.Remotes
+ 
+script.Parent.MouseButton1Click:Connect(function()
+    local KeyBox = script.Parent.Parent.TextBox
+    remotes.EXecuteServer:FireServer(KeyBox.Text)
 end)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -174,18 +176,6 @@ local function PKIPWI_fake_script() -- Frame.LocalScript
 		for i = 255,0,-5 do
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
 			wait(0.01)
-		end
-	end
-end
-coroutine.wrap(PKIPWI_fake_script)()
-local function PKIPWI_fake_script() -- Enter.LocalScript 
-	local script = Instance.new('LocalScript', Enter)
-
-local remotes = script.Parent.Parent.Remotes
-
-script.Parent.MouseButton1Click:Connect(function()
-    local KeyBox = script.Parent.Parent.TextBox
-    remotes.EXecuteServer:FireServer(KeyBox.Text)
 		end
 	end
 end
