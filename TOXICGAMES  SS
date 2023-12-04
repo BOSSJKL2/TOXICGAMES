@@ -6,8 +6,8 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local KeyBox = Instance.new("TextBox")
-local GetKey = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
+local open = Instance.new("TextButton")
 local Enter = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 
@@ -35,43 +35,32 @@ KeyBox.Text = ""
 KeyBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 KeyBox.TextSize = 14.000
 
-GetKey.Name = "GetKey"
-GetKey.Parent = Frame
-GetKey.BackgroundColor3 = Color3.fromRGB(255, 112, 112)
-GetKey.BackgroundTransparency = 1
-GetKey.Position = UDim2.new(0.264887065, 0, 0.528846145, 0)
-GetKey.Size = UDim2.new(0, 228, 0, 33)
-GetKey.Font = Enum.Font.LuckiestGuy
-GetKey.LineHeight = 0.750
-GetKey.Text = "Close"
-GetKey.TextColor3 = Color3.fromRGB(255, 112, 112)
-GetKey.TextSize = 22.000
-GetKey.MouseButton1Click:Connect(function()
-Close.Visible = true
-GetKey.Visible = false
-KeyBox.Visible = false
-Frame.Visible = false
-TextLabel.Visible = false
-Enter.Visible = false
-end)
 Close.Name = "Close"
 Close.Parent = SS
 Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Close.Visible = false
 Close.Size = UDim2.new(0, 60, 0, 50)
 Close.Font = Enum.Font.SourceSans
-Close.Text = "TGS"
+Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(0, 0, 0)
 Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
-Close.MouseButton1Click:Connect(function()
-Close.Visible = false
-GetKey.Visible = true
-KeyBox.Visible = true
+Close.MouseButton1Click:connect(function()
+Frame.Visible = false
+end)
+open.Name = "open"
+open.Parent = SS
+open.BackgroundColor3 = Color3.fromRGB(170, 255, 127)
+open.Position = UDim2.new(0.0549954176, 0, 0, 0)
+open.Size = UDim2.new(0, 91, 0, 50)
+open.Font = Enum.Font.SourceSans
+open.Text = "TGS"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
+open.MouseButton1Click:connect(function()
 Frame.Visible = true
-TextLabel.Visible = true
-Enter.Visible = true
 end)
 Enter.Name = "Enter"
 Enter.Parent = Frame
