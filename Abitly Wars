@@ -5,34 +5,15 @@ local PhantomForcesWindow = Library:NewWindow("😡 BOSSJKLO EXPLOIT 😡")
 local Bladeball = PhantomForcesWindow:NewSection("BladeBall MainTab V1")
 
 Bladeball:CreateToggle("SPEED WALK 😡", function()
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 53
-game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 53
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 73
 end)
 
-Bladeball:CreateToggle("Auto-Kill Bosses 😡", function()
-Callback = function(bool)
-      getgenv().autokillboss = bool
-		while getgenv().autokillboss == true and boss() ~= "none" do
-         local punch = boss()
-         task.wait(.1)
-         local args = {
-         [1] = workspace:WaitForChild(punch),
-         [2] = Vector3.new(workspace:WaitForChild(punch):WaitForChild("Right Leg").Position),
-         [3] = 1.8757749795913696,
-         [4] = workspace:WaitForChild(punch):WaitForChild("Right Leg")
-      }
-      game:GetService("ReplicatedStorage"):WaitForChild("Remote Events"):WaitForChild("Punch"):FireServer(unpack(args))
-      end
-	end
+Bladeball:CreateToggle("ABILITY WARS OLD 😡", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/wAWCpCZC"))()
 end)
 
 Bladeball:CreateToggle("TELEPORT 😡", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Teleport%20Gui.lua"))()
-end)
-
-Bladeball:CreateButton("Punch-Aura 😡", function()
-getgenv().aurareach = 19
-	end
 end)
 
 Bladeball:CreateToggle("EXPLOIT JOINED 😡",
