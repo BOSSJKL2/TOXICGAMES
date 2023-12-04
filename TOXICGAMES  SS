@@ -10,6 +10,7 @@ local Close = Instance.new("TextButton")
 local open = Instance.new("TextButton")
 local Enter = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+local remotes = script.Parent.Parent.Remotes
 
 --Properties:
 
@@ -73,9 +74,6 @@ Enter.Text = "EXECUTE"
 Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter.TextSize = 19.000
 Enter.MouseButton1Click:Connect(function()
-local remotes = script.Parent.Parent.Remotes
- 
-script.Parent.MouseButton1Click:Connect(function()
     local KeyBox = script.Parent.Parent.TextBox
     remotes.EXecuteServer:FireServer(KeyBox.Text)
 end)
