@@ -305,7 +305,7 @@ end
 local function LocalScript_2(script)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(script.Parent.Parent.Source.Text)()
+		loadstring( "script.Parent.Parent.Source.Text" )()
 	end)
 	
 end
