@@ -23,7 +23,7 @@ Frame.Position = UDim2.new(0.5, -158, 0.5, -83)
 Frame.Size = UDim2.new(0, 316, 0, 167)
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel.BackgroundTransparency = 1
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 316, 0, 167)
@@ -38,13 +38,13 @@ epic.Parent = ScreenGui
 
 Main.Name = "Main"
 Main.Parent = epic
-Main.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+Main.BackgroundColor3 = Color3.new(0, 0, 1)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.010766536, 0, 0.582400024, 0)
 Main.Size = UDim2.new(0, 384, 0, 250)
 
 Frame_2.Parent = Main
-Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BackgroundColor3 = Color3.new(0, 0, 1)
 Frame_2.BorderSizePixel = 0
 Frame_2.Size = UDim2.new(0, 384, 0, 11)
 
@@ -77,7 +77,7 @@ TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
 
 Execute.Name = "Execute"
 Execute.Parent = Main
-Execute.BackgroundColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+Execute.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Execute.BorderSizePixel = 0
 Execute.Position = UDim2.new(0.0320000052, 0, 0.815999985, 0)
 Execute.Size = UDim2.new(0, 178, 0, 37)
@@ -88,7 +88,7 @@ Execute.TextSize = 16
 
 Clear.Name = "Clear"
 Clear.Parent = Main
-Clear.BackgroundColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+Clear.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Clear.BorderSizePixel = 0
 Clear.Position = UDim2.new(0.515625, 0, 0.815999985, 0)
 Clear.Size = UDim2.new(0, 178, 0, 37)
