@@ -170,22 +170,24 @@ coroutine.resume(coroutine.create(SCRIPT_NANX79_FAKESCRIPT))
 function SCRIPT_MGRK65_FAKESCRIPT() -- Execute.Script 
 	local script = Instance.new('Script')
 	script.Parent = Execute
-Execute.MouseButton1Click:Connect(function()
-	game.ReplicatedStorage.RemoteEvent:FireServer(TextBox.Text)
-end)
+	local remote = script.Parent.MSFunction
+	
+	remote.OnServerEvent:Connect(function(idk, lol)
+		require(script.Loadstring)(lol)()
+	end)
 
 end
 coroutine.resume(coroutine.create(SCRIPT_MGRK65_FAKESCRIPT))
 function SCRIPT_SCMF76_FAKESCRIPT() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript')
 	script.Parent = Execute
-Execute.MouseButton1Click:Connect(function()
-	if game.ReplicatedStorage:FindFirstChild("RemoteEvent") then
-        print("Game is SS")
-    else
-        print("Game isn't SS")
-    end
-end)
+	local execute = script.Parent.Parent.Execute
+	local text = script.Parent.Parent.TextBox
+	local remote = script.Parent.MSFunction
+	
+	execute.MouseButton1Click:Connect(function()
+		remote:FireServer(text.Text)
+	end)
 
 end
 coroutine.resume(coroutine.create(SCRIPT_SCMF76_FAKESCRIPT))
