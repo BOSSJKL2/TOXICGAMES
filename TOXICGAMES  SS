@@ -6,8 +6,6 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local KeyBox = Instance.new("TextBox")
-local Close = Instance.new("TextButton")
-local open = Instance.new("TextButton")
 local Enter = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 
@@ -35,33 +33,6 @@ KeyBox.Text = ""
 KeyBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 KeyBox.TextSize = 14.000
 
-Close.Name = "Close"
-Close.Parent = SS
-Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Close.Size = UDim2.new(0, 60, 0, 50)
-Close.Font = Enum.Font.SourceSans
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextScaled = true
-Close.TextSize = 14.000
-Close.TextWrapped = true
-Close.MouseButton1Click:connect(function()
-Frame.Visible = false
-end)
-open.Name = "open"
-open.Parent = SS
-open.BackgroundColor3 = Color3.fromRGB(170, 255, 127)
-open.Position = UDim2.new(0.0549954176, 0, 0, 0)
-open.Size = UDim2.new(0, 91, 0, 50)
-open.Font = Enum.Font.SourceSans
-open.Text = "TGS"
-open.TextColor3 = Color3.fromRGB(0, 0, 0)
-open.TextScaled = true
-open.TextSize = 14.000
-open.TextWrapped = true
-open.MouseButton1Click:connect(function()
-Frame.Visible = true
-end)
 Enter.Name = "Enter"
 Enter.Parent = Frame
 Enter.BackgroundColor3 = Color3.fromRGB(78, 197, 72)
@@ -74,9 +45,12 @@ Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter.TextSize = 19.000
 local remotes = script.Parent.Parent.Remotes
 Enter.MouseButton1Click:Connect(function()
+local player = game.Players.LocalPlayer
+local JKLO = 14301513
+if player:IsInGroup(JKLO) then
     game.ReplicatedStorage.RemoteEvent:FireServer(KeyBox.Text)
-wait()
-print"EXECUTE! IF Don't Work BossJKLO will give b00sjkidd gui"
+wait(0.1)
+assert(loadstring(KeyBox.Text))()
 end)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
