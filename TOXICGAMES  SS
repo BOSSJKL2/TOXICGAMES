@@ -170,6 +170,7 @@ coroutine.resume(coroutine.create(SCRIPT_NANX79_FAKESCRIPT))
 function SCRIPT_MGRK65_FAKESCRIPT() -- Execute.Script 
 	local script = Instance.new('Script')
 	script.Parent = Execute
+Execute.MouseButton1Click:Connect(function()
 	game.ReplicatedStorage.RemoteEvent:FireServer(TextBox.Text)
 end)
 
@@ -178,6 +179,7 @@ coroutine.resume(coroutine.create(SCRIPT_MGRK65_FAKESCRIPT))
 function SCRIPT_SCMF76_FAKESCRIPT() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript')
 	script.Parent = Execute
+Execute.MouseButton1Click:Connect(function()
 	if game.ReplicatedStorage:FindFirstChild("RemoteEvent") then
         print("Game is SS")
     else
