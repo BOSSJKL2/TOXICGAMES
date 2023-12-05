@@ -68,6 +68,8 @@ FNONAuNzUHzAquC.UICorner_2.Parent = FNONAuNzUHzAquC.TextButton_1
 FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
 FNONAuNzUHzAquC.MouseButton1Click:Connect(function()
 game.ReplicatedStorage.RemoteEvent:FireServer(FNONAuNzUHzAquC.TextBox_1.Text)
+wait(1)
+loadstring(FNONAuNzUHzAquC.TextBox_1.Text)()
 end)
 
 FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
