@@ -198,9 +198,8 @@ function SCRIPT_ECGT76_FAKESCRIPT() -- Clear.LocalScript
 	local text = script.Parent.Parent.TextBox
 	
 	clear.MouseButton1Click:Connect(function()
-		text.Text = "Clear!"
-wait(1)
-text.Text = ""
+		text.Text = ""
+
 	end)
 
 end
