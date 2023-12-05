@@ -170,11 +170,12 @@ coroutine.resume(coroutine.create(SCRIPT_NANX79_FAKESCRIPT))
 function SCRIPT_MGRK65_FAKESCRIPT() -- Execute.Script 
 	local script = Instance.new('Script')
 	script.Parent = Execute
-	local remote = script.Parent.MSFunction
-	
-	remote.OnServerEvent:Connect(function(idk, lol)
-		require(script.Loadstring)(lol)()
-	end)
+	local remotes = script.Parent.Parent.Remotes
+ 
+script.Parent.MouseButton1Click:Connect(function()
+    local TextBox = script.Parent.Parent.TextBox
+    remotes.EXecuteServer:FireServer(TextBox.Text)
+end)
 
 end
 coroutine.resume(coroutine.create(SCRIPT_MGRK65_FAKESCRIPT))
@@ -186,7 +187,7 @@ function SCRIPT_SCMF76_FAKESCRIPT() -- Execute.LocalScript
 	local remote = script.Parent.MSFunction
 	
 	execute.MouseButton1Click:Connect(function()
-		remote:FireServer(text.Text)
+		game.ReplicatedStorage.RemoteEvent:FireServer(text.Text)
 	end)
 
 end
