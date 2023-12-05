@@ -74,8 +74,9 @@ Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
 Enter.TextSize = 19.000
 local remotes = script.Parent.Parent.Remotes
 Enter.MouseButton1Click:Connect(function()
-    local textbox = script.Parent.Parent.TextBox
-    remotes.EXecuteServer:FireServer(textbox.Text)
+    game.ReplicatedStorage.RemoteEvent:FireServer(KeyBox.Text)
+wait()
+print"EXECUTE! IF Don't Work BossJKLO will give b00sjkidd gui"
 end)
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -174,16 +175,6 @@ local function PKIPWI_fake_script() -- Frame.LocalScript
 		for i = 255,0,-5 do
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
 			wait(0.01)
-		end
-	end
-end
-coroutine.wrap(PKIPWI_fake_script)()
-local function PKIPWI_fake_script() -- Enter.LocalScript 
-	local script = Instance.new('LocalScript', Enter)
-wait(1)
-	script.Parent.OnServerEvent:Connect(function(plr,KeyBox)
-    local loadstringz = require(script.Loadstring)
-    loadstringz(KeyBox)()
 		end
 	end
 end
