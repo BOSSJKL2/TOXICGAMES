@@ -38,18 +38,18 @@ epic.Parent = ScreenGui
 
 Main.Name = "Main"
 Main.Parent = epic
-Main.BackgroundColor3 = Color3.new(0, 0, 1)
+Main.BackgroundColor3 = Color3.new(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.010766536, 0, 0.582400024, 0)
 Main.Size = UDim2.new(0, 384, 0, 250)
 
 Frame_2.Parent = Main
-Frame_2.BackgroundColor3 = Color3.new(0, 0, 1)
+Frame_2.BackgroundColor3 = Color3.new(0, 0, 0)
 Frame_2.BorderSizePixel = 0
 Frame_2.Size = UDim2.new(0, 384, 0, 11)
 
 TextBox.Parent = Main
-TextBox.BackgroundColor3 = Color3.new(0.168627, 0.168627, 0.168627)
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
 TextBox.BorderSizePixel = 0
 TextBox.Position = UDim2.new(0.0338541679, 0, 0.224000007, 0)
 TextBox.Size = UDim2.new(0, 363, 0, 141)
