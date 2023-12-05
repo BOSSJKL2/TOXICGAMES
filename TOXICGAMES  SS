@@ -64,13 +64,10 @@ FNONAuNzUHzAquC.TextButton_1.Position = UDim2.new(0.00756143685, 0, 0.829268277,
 FNONAuNzUHzAquC.TextButton_1.Size = UDim2.new(0, 121, 0, 35)
 FNONAuNzUHzAquC.TextButton_1.Name = [[Execute]]
 FNONAuNzUHzAquC.TextButton_1.Parent = FNONAuNzUHzAquC.Frame_2
+
 FNONAuNzUHzAquC.UICorner_2.Parent = FNONAuNzUHzAquC.TextButton_1
+
 FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
-FNONAuNzUHzAquC.MouseButton1Click:Connect(function()
-game.ReplicatedStorage.RemoteEvent:FireServer(FNONAuNzUHzAquC.TextBox_1.Text)
-wait(1)
-loadstring(FNONAuNzUHzAquC.TextBox_1.Text)()
-end)
 
 FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextButton_2.Text = [[CLEAR]]
@@ -308,7 +305,7 @@ end
 local function LocalScript_2(script)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(script.Parent.Parent.FNONAuNzUHzAquC.TextBox_1.Text)()
+		loadstring(script.Parent.Parent.Source.Text)()
 	end)
 	
 end
