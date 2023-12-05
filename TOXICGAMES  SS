@@ -6,14 +6,14 @@ FNONAuNzUHzAquC.ScreenGui_1.Parent = game.CoreGui
 
 ----------------------------------------------------------------------------------------------------
 
-FNONAuNzUHzAquC.Frame_1.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.Frame_1.BackgroundColor3 = Color3.new(0, 0, 1)
 FNONAuNzUHzAquC.Frame_1.Position = UDim2.new(0.246968031, 0, 0.273092359, 0)
 FNONAuNzUHzAquC.Frame_1.Size = UDim2.new(0, 529, 0, 246)
 FNONAuNzUHzAquC.Frame_1.Visible = false
 FNONAuNzUHzAquC.Frame_1.Name = [[Main]]
 FNONAuNzUHzAquC.Frame_1.Parent = FNONAuNzUHzAquC.ScreenGui_1
 
-FNONAuNzUHzAquC.Frame_2.BackgroundColor3 = Color3.new(1, 0.709804, 0.882353)
+FNONAuNzUHzAquC.Frame_2.BackgroundColor3 = Color3.new(0, 0, 1)
 FNONAuNzUHzAquC.Frame_2.BorderColor3 = Color3.new(1, 1, 1)
 FNONAuNzUHzAquC.Frame_2.Position = UDim2.new(0.255198479, 0, 0.0528455228, 0)
 FNONAuNzUHzAquC.Frame_2.Size = UDim2.new(0, 529, 0, 246)
@@ -21,8 +21,8 @@ FNONAuNzUHzAquC.Frame_2.Parent = FNONAuNzUHzAquC.Frame_1
 
 FNONAuNzUHzAquC.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/Bangers.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextLabel_1.RichText = true
-FNONAuNzUHzAquC.TextLabel_1.Text = [[TOXICGAMES SS😡]]
-FNONAuNzUHzAquC.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_1.Text = [[TOXICGAMES😡]]
+FNONAuNzUHzAquC.TextLabel_1.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextLabel_1.TextSize = 20
 FNONAuNzUHzAquC.TextLabel_1.TextWrapped = true
 FNONAuNzUHzAquC.TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -39,11 +39,11 @@ FNONAuNzUHzAquC.LocalScript_1.Parent = FNONAuNzUHzAquC.UIGradient_1
 
 FNONAuNzUHzAquC.TextBox_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextBox_1.Text = [[😡PUT YOUR SCRIPT😡]]
-FNONAuNzUHzAquC.TextBox_1.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextBox_1.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextBox_1.TextSize = 14
 FNONAuNzUHzAquC.TextBox_1.TextXAlignment = Enum.TextXAlignment.Left
 FNONAuNzUHzAquC.TextBox_1.TextYAlignment = Enum.TextYAlignment.Top
-FNONAuNzUHzAquC.TextBox_1.BackgroundColor3 = Color3.new(0.6, 0.407843, 0.647059)
+FNONAuNzUHzAquC.TextBox_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 FNONAuNzUHzAquC.TextBox_1.BorderColor3 = Color3.new(1, 1, 1)
 FNONAuNzUHzAquC.TextBox_1.Position = UDim2.new(0.0094517963, 0, 0.16260162, 0)
 FNONAuNzUHzAquC.TextBox_1.Size = UDim2.new(0, 519, 0, 142)
@@ -54,7 +54,7 @@ FNONAuNzUHzAquC.UICorner_1.Parent = FNONAuNzUHzAquC.TextBox_1
 
 FNONAuNzUHzAquC.TextButton_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextButton_1.Text = [[EXECUTE]]
-FNONAuNzUHzAquC.TextButton_1.TextColor3 = Color3.new(1, 0.666667, 1)
+FNONAuNzUHzAquC.TextButton_1.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextButton_1.TextSize = 25
 FNONAuNzUHzAquC.TextButton_1.TextWrapped = true
 FNONAuNzUHzAquC.TextButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -71,7 +71,7 @@ FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
 
 FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextButton_2.Text = [[CLEAR]]
-FNONAuNzUHzAquC.TextButton_2.TextColor3 = Color3.new(1, 0.666667, 1)
+FNONAuNzUHzAquC.TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextButton_2.TextSize = 25
 FNONAuNzUHzAquC.TextButton_2.TextWrapped = true
 FNONAuNzUHzAquC.TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -88,7 +88,7 @@ FNONAuNzUHzAquC.LocalScript_3.Parent = FNONAuNzUHzAquC.TextButton_2
 
 FNONAuNzUHzAquC.TextLabel_2.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextLabel_2.Text = [[TGS]]
-FNONAuNzUHzAquC.TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextLabel_2.TextScaled = true
 FNONAuNzUHzAquC.TextLabel_2.TextSize = 14
 FNONAuNzUHzAquC.TextLabel_2.TextWrapped = true
@@ -115,7 +115,7 @@ FNONAuNzUHzAquC.UICorner_4.Parent = FNONAuNzUHzAquC.ImageLabel_1
 
 FNONAuNzUHzAquC.TextLabel_3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 FNONAuNzUHzAquC.TextLabel_3.Text = [[by BossJKLO]]
-FNONAuNzUHzAquC.TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextLabel_3.TextSize = 14
 FNONAuNzUHzAquC.TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
 FNONAuNzUHzAquC.TextLabel_3.BackgroundTransparency = 1
