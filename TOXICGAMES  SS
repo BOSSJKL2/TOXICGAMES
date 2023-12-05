@@ -1,155 +1,344 @@
--- Gui to Lua
--- Version: 3.2
+local FNONAuNzUHzAquC = {["Frame_1"] = Instance.new("Frame"), ["Frame_2"] = Instance.new("Frame"), ["TextLabel_1"] = Instance.new("TextLabel"), ["UIGradient_1"] = Instance.new("UIGradient"), ["LocalScript_1"] = Instance.new("LocalScript"), ["TextBox_1"] = Instance.new("TextBox"), ["UICorner_1"] = Instance.new("UICorner"), ["TextButton_1"] = Instance.new("TextButton"), ["UICorner_2"] = Instance.new("UICorner"), ["LocalScript_2"] = Instance.new("LocalScript"), ["TextButton_2"] = Instance.new("TextButton"), ["UICorner_3"] = Instance.new("UICorner"), ["LocalScript_3"] = Instance.new("LocalScript"), ["TextLabel_2"] = Instance.new("TextLabel"), ["UIGradient_2"] = Instance.new("UIGradient"), ["LocalScript_4"] = Instance.new("LocalScript"), ["ImageLabel_1"] = Instance.new("ImageLabel"), ["UICorner_4"] = Instance.new("UICorner"), ["TextLabel_3"] = Instance.new("TextLabel"), ["UIGradient_3"] = Instance.new("UIGradient"), ["LocalScript_5"] = Instance.new("LocalScript"), ["UIListLayout_1"] = Instance.new("UIListLayout"), ["LocalScript_6"] = Instance.new("LocalScript"), ["ImageButton_1"] = Instance.new("ImageButton"), ["LocalScript_7"] = Instance.new("LocalScript"), ["LocalScript_8"] = Instance.new("LocalScript"), ["UICorner_5"] = Instance.new("UICorner"), ["UICorner_6"] = Instance.new("UICorner"), ["ScreenGui_1"] = Instance.new("ScreenGui")}
 
--- Instances:
+--
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local KeyBox = Instance.new("TextBox")
-local Enter = Instance.new("TextButton")
-local TextLabel = Instance.new("TextLabel")
+FNONAuNzUHzAquC.ScreenGui_1.Parent = game.CoreGui
 
---Properties:
+----------------------------------------------------------------------------------------------------
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.Parent = game.CoreGui
+FNONAuNzUHzAquC.Frame_1.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.Frame_1.Position = UDim2.new(0.246968031, 0, 0.273092359, 0)
+FNONAuNzUHzAquC.Frame_1.Size = UDim2.new(0, 529, 0, 246)
+FNONAuNzUHzAquC.Frame_1.Visible = false
+FNONAuNzUHzAquC.Frame_1.Name = [[Main]]
+FNONAuNzUHzAquC.Frame_1.Parent = FNONAuNzUHzAquC.ScreenGui_1
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(161, 214, 255)
-Frame.BorderColor3 = Color3.fromRGB(255, 112, 112)
-Frame.BackgroundTransparency = 0.447
-Frame.Position = UDim2.new(0.370578766, 0, 0.300341278, 0)
-Frame.Size = UDim2.new(0, 487, 0, 208)
+FNONAuNzUHzAquC.Frame_2.BackgroundColor3 = Color3.new(1, 0.709804, 0.882353)
+FNONAuNzUHzAquC.Frame_2.BorderColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.Frame_2.Position = UDim2.new(0.255198479, 0, 0.0528455228, 0)
+FNONAuNzUHzAquC.Frame_2.Size = UDim2.new(0, 529, 0, 246)
+FNONAuNzUHzAquC.Frame_2.Parent = FNONAuNzUHzAquC.Frame_1
 
-KeyBox.Name = "KeyBox"
-KeyBox.Parent = Frame
-KeyBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KeyBox.BorderColor3 = Color3.fromRGB(255, 112, 112)
-KeyBox.Position = UDim2.new(0.215605766, 0, 0.211538464, 0)
-KeyBox.Size = UDim2.new(0, 277, 0, 50)
-KeyBox.Font = Enum.Font.SourceSans
-KeyBox.Text = ""
-KeyBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-KeyBox.TextSize = 14.000
+FNONAuNzUHzAquC.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/Bangers.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+FNONAuNzUHzAquC.TextLabel_1.RichText = true
+FNONAuNzUHzAquC.TextLabel_1.Text = [[TOXICGAMES SS😡]]
+FNONAuNzUHzAquC.TextLabel_1.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_1.TextSize = 20
+FNONAuNzUHzAquC.TextLabel_1.TextWrapped = true
+FNONAuNzUHzAquC.TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_1.BackgroundTransparency = 1
+FNONAuNzUHzAquC.TextLabel_1.Position = UDim2.new(0.739130437, 0, -0.040650405, 0)
+FNONAuNzUHzAquC.TextLabel_1.Size = UDim2.new(0, 200, 0, 50)
+FNONAuNzUHzAquC.TextLabel_1.Name = [[Pink]]
+FNONAuNzUHzAquC.TextLabel_1.Parent = FNONAuNzUHzAquC.Frame_2
 
-Enter.Name = "Enter"
-Enter.Parent = Frame
-Enter.BackgroundColor3 = Color3.fromRGB(78, 197, 72)
-Enter.Position = UDim2.new(0.264887065, 0, 0.745192349, 0)
-Enter.Size = UDim2.new(0, 228, 0, 34)
-Enter.Font = Enum.Font.LuckiestGuy
-Enter.LineHeight = 0.750
-Enter.Text = "EXECUTE"
-Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
-Enter.TextSize = 19.000
-local remotes = script.Parent.Parent.Remotes
-Enter.MouseButton1Click:Connect(function()
-local player = game.Players.LocalPlayer
-local JKLO = 14301513
-if player:IsInGroup(JKLO) then
-    game.ReplicatedStorage.RemoteEvent:FireServer(KeyBox.Text)
-wait(0.1)
-assert(loadstring(KeyBox.Text))()
-end)
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.293634474, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.Bangers
-TextLabel.Text = "TOXICGAMES  SS By JKLO_TEAM"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 22.000
+FNONAuNzUHzAquC.UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.119377, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.235294, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.365052, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.515571, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.66609, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.807958, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.635294, 0.776471))}
+FNONAuNzUHzAquC.UIGradient_1.Parent = FNONAuNzUHzAquC.TextLabel_1
 
--- Scripts:
+FNONAuNzUHzAquC.LocalScript_1.Parent = FNONAuNzUHzAquC.UIGradient_1
 
-local function LLCZL_fake_script() -- Frame.Smooth GUI Dragging 
-	local script = Instance.new('LocalScript', Frame)
+FNONAuNzUHzAquC.TextBox_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+FNONAuNzUHzAquC.TextBox_1.Text = [[😡PUT YOUR SCRIPT😡]]
+FNONAuNzUHzAquC.TextBox_1.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextBox_1.TextSize = 14
+FNONAuNzUHzAquC.TextBox_1.TextXAlignment = Enum.TextXAlignment.Left
+FNONAuNzUHzAquC.TextBox_1.TextYAlignment = Enum.TextYAlignment.Top
+FNONAuNzUHzAquC.TextBox_1.BackgroundColor3 = Color3.new(0.6, 0.407843, 0.647059)
+FNONAuNzUHzAquC.TextBox_1.BorderColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextBox_1.Position = UDim2.new(0.0094517963, 0, 0.16260162, 0)
+FNONAuNzUHzAquC.TextBox_1.Size = UDim2.new(0, 519, 0, 142)
+FNONAuNzUHzAquC.TextBox_1.Name = [[Source]]
+FNONAuNzUHzAquC.TextBox_1.Parent = FNONAuNzUHzAquC.Frame_2
 
-	local UserInputService = game:GetService("UserInputService")
-	local runService = (game:GetService("RunService"));
+FNONAuNzUHzAquC.UICorner_1.Parent = FNONAuNzUHzAquC.TextBox_1
+
+FNONAuNzUHzAquC.TextButton_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+FNONAuNzUHzAquC.TextButton_1.Text = [[EXECUTE]]
+FNONAuNzUHzAquC.TextButton_1.TextColor3 = Color3.new(1, 0.666667, 1)
+FNONAuNzUHzAquC.TextButton_1.TextSize = 25
+FNONAuNzUHzAquC.TextButton_1.TextWrapped = true
+FNONAuNzUHzAquC.TextButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextButton_1.BorderColor3 = Color3.new(0.717647, 0.886275, 1)
+FNONAuNzUHzAquC.TextButton_1.BorderSizePixel = 2
+FNONAuNzUHzAquC.TextButton_1.Position = UDim2.new(0.00756143685, 0, 0.829268277, 0)
+FNONAuNzUHzAquC.TextButton_1.Size = UDim2.new(0, 121, 0, 35)
+FNONAuNzUHzAquC.TextButton_1.Name = [[Execute]]
+FNONAuNzUHzAquC.TextButton_1.Parent = FNONAuNzUHzAquC.Frame_2
+
+FNONAuNzUHzAquC.UICorner_2.Parent = FNONAuNzUHzAquC.TextButton_1
+
+FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
+
+FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+FNONAuNzUHzAquC.TextButton_2.Text = [[CLEAR]]
+FNONAuNzUHzAquC.TextButton_2.TextColor3 = Color3.new(1, 0.666667, 1)
+FNONAuNzUHzAquC.TextButton_2.TextSize = 25
+FNONAuNzUHzAquC.TextButton_2.TextWrapped = true
+FNONAuNzUHzAquC.TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextButton_2.BorderColor3 = Color3.new(0.717647, 0.886275, 1)
+FNONAuNzUHzAquC.TextButton_2.BorderSizePixel = 2
+FNONAuNzUHzAquC.TextButton_2.Position = UDim2.new(0.253308117, 0, 0.82520324, 0)
+FNONAuNzUHzAquC.TextButton_2.Size = UDim2.new(0, 120, 0, 36)
+FNONAuNzUHzAquC.TextButton_2.Name = [[Clear]]
+FNONAuNzUHzAquC.TextButton_2.Parent = FNONAuNzUHzAquC.Frame_2
+
+FNONAuNzUHzAquC.UICorner_3.Parent = FNONAuNzUHzAquC.TextButton_2
+
+FNONAuNzUHzAquC.LocalScript_3.Parent = FNONAuNzUHzAquC.TextButton_2
+
+FNONAuNzUHzAquC.TextLabel_2.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+FNONAuNzUHzAquC.TextLabel_2.Text = [[TGS]]
+FNONAuNzUHzAquC.TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_2.TextScaled = true
+FNONAuNzUHzAquC.TextLabel_2.TextSize = 14
+FNONAuNzUHzAquC.TextLabel_2.TextWrapped = true
+FNONAuNzUHzAquC.TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_2.BackgroundTransparency = 1
+FNONAuNzUHzAquC.TextLabel_2.Position = UDim2.new(-0.0888468847, 0, 0, 0)
+FNONAuNzUHzAquC.TextLabel_2.Size = UDim2.new(0, 154, 0, 41)
+FNONAuNzUHzAquC.TextLabel_2.Parent = FNONAuNzUHzAquC.Frame_2
+
+FNONAuNzUHzAquC.UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.119377, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.235294, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.365052, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.515571, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.66609, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.807958, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.635294, 0.776471))}
+FNONAuNzUHzAquC.UIGradient_2.Parent = FNONAuNzUHzAquC.TextLabel_2
+
+FNONAuNzUHzAquC.LocalScript_4.Parent = FNONAuNzUHzAquC.UIGradient_2
+
+FNONAuNzUHzAquC.ImageLabel_1.Image = [[http://www.roblox.com/asset/?id=15399436748]]
+FNONAuNzUHzAquC.ImageLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.ImageLabel_1.BorderSizePixel = 0
+FNONAuNzUHzAquC.ImageLabel_1.Position = UDim2.new(0.12098299, 0, 0, 0)
+FNONAuNzUHzAquC.ImageLabel_1.Size = UDim2.new(0, 43, 0, 40)
+FNONAuNzUHzAquC.ImageLabel_1.Parent = FNONAuNzUHzAquC.Frame_2
+
+FNONAuNzUHzAquC.UICorner_4.CornerRadius = UDim.new(1, 1)
+FNONAuNzUHzAquC.UICorner_4.Parent = FNONAuNzUHzAquC.ImageLabel_1
+
+FNONAuNzUHzAquC.TextLabel_3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+FNONAuNzUHzAquC.TextLabel_3.Text = [[by BossJKLO]]
+FNONAuNzUHzAquC.TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_3.TextSize = 14
+FNONAuNzUHzAquC.TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.TextLabel_3.BackgroundTransparency = 1
+FNONAuNzUHzAquC.TextLabel_3.BorderSizePixel = 0
+FNONAuNzUHzAquC.TextLabel_3.Position = UDim2.new(0.699432909, 0, 0.86178863, 0)
+FNONAuNzUHzAquC.TextLabel_3.Size = UDim2.new(0, 215, 0, 50)
+FNONAuNzUHzAquC.TextLabel_3.Parent = FNONAuNzUHzAquC.Frame_2
+
+FNONAuNzUHzAquC.UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.119377, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.235294, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.365052, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.515571, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.66609, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.807958, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.635294, 0.776471))}
+FNONAuNzUHzAquC.UIGradient_3.Parent = FNONAuNzUHzAquC.TextLabel_3
+
+FNONAuNzUHzAquC.LocalScript_5.Parent = FNONAuNzUHzAquC.UIGradient_3
+
+FNONAuNzUHzAquC.UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
+FNONAuNzUHzAquC.UIListLayout_1.Parent = FNONAuNzUHzAquC.Frame_1
+
+FNONAuNzUHzAquC.LocalScript_6.Parent = FNONAuNzUHzAquC.Frame_1
+
+FNONAuNzUHzAquC.ImageButton_1.Image = [[http://www.roblox.com/asset/?id=15399436748]]
+FNONAuNzUHzAquC.ImageButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
+FNONAuNzUHzAquC.ImageButton_1.Size = UDim2.new(0, 43, 0, 40)
+FNONAuNzUHzAquC.ImageButton_1.Parent = FNONAuNzUHzAquC.ScreenGui_1
+
+FNONAuNzUHzAquC.LocalScript_7.Parent = FNONAuNzUHzAquC.ImageButton_1
+
+FNONAuNzUHzAquC.LocalScript_8.Parent = FNONAuNzUHzAquC.ImageButton_1
+
+FNONAuNzUHzAquC.UICorner_5.Parent = FNONAuNzUHzAquC.ImageButton_1
+
+FNONAuNzUHzAquC.UICorner_6.Parent = FNONAuNzUHzAquC.ImageButton_1
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_1(script)
+
+	--[[
 	
-	local gui = script.Parent
 	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
 	
-	function Lerp(a, b, m)
-		return a + (b - a) * m
-	end;
+	            __   ___     __             ___  __   __       
+	 |\/|  /\  |  \ |__     |__) \ /    \_/  |  /  \ |__)  /\  
+	 |  | /~~\ |__/ |___    |__)  |     / \  |  \__/ |    /~~\ 
+	                                                           
 	
-	local lastMousePos
-	local lastGoalPos
-	local DRAG_SPEED = (8); -- // The speed of the UI darg.
-	function Update(dt)
-		if not (startPos) then return end;
-		if not (dragging) and (lastGoalPos) then
-			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
-			return 
-		end;
 	
-		local delta = (lastMousePos - UserInputService:GetMouseLocation())
-		local xGoal = (startPos.X.Offset - delta.X);
-		local yGoal = (startPos.Y.Offset - delta.Y);
-		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
-		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
-	end;
+			~ 2023.03.31
+		- Moving UIGradient
 	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			lastMousePos = UserInputService:GetMouseLocation()
+	]]--
 	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
+	-- Variables 
+	
+	local TweenService = game:GetService("TweenService")
+	local gradient = script.Parent
+	
+	-- Main Func.
+	
+	while true do
+		local tween = TweenService:Create(gradient, TweenInfo.new(1), {
+			Offset = Vector2.new(0.3 * math.sin(time()), 0)
+		})
+		tween:Play()	-- start the tween animation
+		wait()	-- A wait for when the gradient reaches the end point, if it was wait(1) it would wait 1 second before looping over again
+		
+	--REMOVING "WAIT" WILL BREAK THE ENTIRE SCRIPT AND LAG YOUR GAME
+		
+	end -- end [Can you believe that!]
+	
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_5(script)
+
+	--[[
+	
+	
+	
+	            __   ___     __             ___  __   __       
+	 |\/|  /\  |  \ |__     |__) \ /    \_/  |  /  \ |__)  /\  
+	 |  | /~~\ |__/ |___    |__)  |     / \  |  \__/ |    /~~\ 
+	                                                           
+	
+	
+			~ 2023.03.31
+		- Moving UIGradient
+	
+	]]--
+	
+	-- Variables 
+	
+	local TweenService = game:GetService("TweenService")
+	local gradient = script.Parent
+	
+	-- Main Func.
+	
+	while true do
+		local tween = TweenService:Create(gradient, TweenInfo.new(1), {
+			Offset = Vector2.new(0.3 * math.sin(time()), 0)
+		})
+		tween:Play()	-- start the tween animation
+		wait()	-- A wait for when the gradient reaches the end point, if it was wait(1) it would wait 1 second before looping over again
+		
+	--REMOVING "WAIT" WILL BREAK THE ENTIRE SCRIPT AND LAG YOUR GAME
+		
+	end -- end [Can you believe that!]
+	
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_6(script)
+
+	-- MainFrame Drag
+	
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	
+	-- Execute Local Script
+	
+	
+	-- Clear Local Script
+	
+	
+	
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_7(script)
+
+	-- MainFrame Drag
+	
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+	
+	-- Execute Local Script
+	
+	
+	-- Clear Local Script
+	
+	
+	
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_4(script)
+
+	--[[
+	
+	
+	
+	            __   ___     __             ___  __   __       
+	 |\/|  /\  |  \ |__     |__) \ /    \_/  |  /  \ |__)  /\  
+	 |  | /~~\ |__/ |___    |__)  |     / \  |  \__/ |    /~~\ 
+	                                                           
+	
+	
+			~ 2023.03.31
+		- Moving UIGradient
+	
+	]]--
+	
+	-- Variables 
+	
+	local TweenService = game:GetService("TweenService")
+	local gradient = script.Parent
+	
+	-- Main Func.
+	
+	while true do
+		local tween = TweenService:Create(gradient, TweenInfo.new(1), {
+			Offset = Vector2.new(0.3 * math.sin(time()), 0)
+		})
+		tween:Play()	-- start the tween animation
+		wait()	-- A wait for when the gradient reaches the end point, if it was wait(1) it would wait 1 second before looping over again
+		
+	--REMOVING "WAIT" WILL BREAK THE ENTIRE SCRIPT AND LAG YOUR GAME
+		
+	end -- end [Can you believe that!]
+	
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_2(script)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.Source.Text)()
 	end)
 	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
+end
+
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_3(script)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Source.Text = ''
 	end)
 	
-	runService.Heartbeat:Connect(Update)
 end
-coroutine.wrap(LLCZL_fake_script)()
-local function PKIPWI_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
 
-	while wait() do
-		for i = 0,255,5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
-			wait(0.01)
-		end
-		for i = 0,255,5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
-			wait(0.01)
-		end
-		for i = 0,255,5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
-			wait(0.01)
-		end
-	end
+----------------------------------------------------------------------------------------------------
+
+local function LocalScript_8(script)
+
+	--You dont need to delete this text.
+	--PUT INSIDE a BUTTON in StarterGui
+	--Make sure to make a frame for the menu to pop up then go to properties > Visible [Off]
+	script.Parent.MouseButton1Click:Connect (function()
+		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
+	end)
 end
-coroutine.wrap(PKIPWI_fake_script)()
+
+----------------------------------------------------------------------------------------------------
+
+coroutine.wrap(LocalScript_1)(FNONAuNzUHzAquC.LocalScript_1)
+coroutine.wrap(LocalScript_5)(FNONAuNzUHzAquC.LocalScript_5)
+coroutine.wrap(LocalScript_6)(FNONAuNzUHzAquC.LocalScript_6)
+coroutine.wrap(LocalScript_7)(FNONAuNzUHzAquC.LocalScript_7)
+coroutine.wrap(LocalScript_4)(FNONAuNzUHzAquC.LocalScript_4)
+coroutine.wrap(LocalScript_2)(FNONAuNzUHzAquC.LocalScript_2)
+coroutine.wrap(LocalScript_3)(FNONAuNzUHzAquC.LocalScript_3)
+coroutine.wrap(LocalScript_8)(FNONAuNzUHzAquC.LocalScript_8)
