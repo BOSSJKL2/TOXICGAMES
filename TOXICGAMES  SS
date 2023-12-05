@@ -1,175 +1,239 @@
-local FNONAuNzUHzAquC = {["Frame_1"] = Instance.new("Frame"), ["Frame_2"] = Instance.new("Frame"), ["TextLabel_1"] = Instance.new("TextLabel"), ["UIGradient_1"] = Instance.new("UIGradient"), ["LocalScript_1"] = Instance.new("LocalScript"), ["TextBox_1"] = Instance.new("TextBox"), ["UICorner_1"] = Instance.new("UICorner"), ["TextButton_1"] = Instance.new("TextButton"), ["UICorner_2"] = Instance.new("UICorner"), ["LocalScript_2"] = Instance.new("LocalScript"), ["TextButton_2"] = Instance.new("TextButton"), ["UICorner_3"] = Instance.new("UICorner"), ["LocalScript_3"] = Instance.new("LocalScript"), ["TextLabel_2"] = Instance.new("TextLabel"), ["UIGradient_2"] = Instance.new("UIGradient"), ["LocalScript_4"] = Instance.new("LocalScript"), ["ImageLabel_1"] = Instance.new("ImageLabel"), ["UICorner_4"] = Instance.new("UICorner"), ["TextLabel_3"] = Instance.new("TextLabel"), ["UIGradient_3"] = Instance.new("UIGradient"), ["LocalScript_5"] = Instance.new("LocalScript"), ["UIListLayout_1"] = Instance.new("UIListLayout"), ["LocalScript_6"] = Instance.new("LocalScript"), ["ImageButton_1"] = Instance.new("ImageButton"), ["LocalScript_7"] = Instance.new("LocalScript"), ["LocalScript_8"] = Instance.new("LocalScript"), ["UICorner_5"] = Instance.new("UICorner"), ["UICorner_6"] = Instance.new("UICorner"), ["ScreenGui_1"] = Instance.new("ScreenGui")}
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local epic = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+--Properties:
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
---
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.32549, 0.32549, 0.32549)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.5, -158, 0.5, -83)
+Frame.Size = UDim2.new(0, 316, 0, 167)
 
-FNONAuNzUHzAquC.ScreenGui_1.Parent = game.CoreGui
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 316, 0, 167)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "ServerSide Script Executor"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 36
+TextLabel.TextWrapped = true
 
-----------------------------------------------------------------------------------------------------
+epic.Name = "epic"
+epic.Parent = ScreenGui
 
-FNONAuNzUHzAquC.Frame_1.BackgroundColor3 = Color3.new(0, 0, 1)
-FNONAuNzUHzAquC.Frame_1.Position = UDim2.new(0.246968031, 0, 0.273092359, 0)
-FNONAuNzUHzAquC.Frame_1.Size = UDim2.new(0, 529, 0, 246)
-FNONAuNzUHzAquC.Frame_1.Visible = false
-FNONAuNzUHzAquC.Frame_1.Name = [[Main]]
-FNONAuNzUHzAquC.Frame_1.Parent = FNONAuNzUHzAquC.ScreenGui_1
+Main.Name = "Main"
+Main.Parent = epic
+Main.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.010766536, 0, 0.582400024, 0)
+Main.Size = UDim2.new(0, 384, 0, 250)
 
-FNONAuNzUHzAquC.Frame_2.BackgroundColor3 = Color3.new(0, 0, 1)
-FNONAuNzUHzAquC.Frame_2.BorderColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.Frame_2.Position = UDim2.new(0.255198479, 0, 0.0528455228, 0)
-FNONAuNzUHzAquC.Frame_2.Size = UDim2.new(0, 529, 0, 246)
-FNONAuNzUHzAquC.Frame_2.Parent = FNONAuNzUHzAquC.Frame_1
+Frame_2.Parent = Main
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 384, 0, 11)
 
-FNONAuNzUHzAquC.TextLabel_1.FontFace = Font.new("rbxasset://fonts/families/Bangers.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextLabel_1.RichText = true
-FNONAuNzUHzAquC.TextLabel_1.Text = [[TOXICGAMES😡]]
-FNONAuNzUHzAquC.TextLabel_1.TextColor3 = Color3.fromRGB(255, 0, 0)
-FNONAuNzUHzAquC.TextLabel_1.TextSize = 20
-FNONAuNzUHzAquC.TextLabel_1.TextWrapped = true
-FNONAuNzUHzAquC.TextLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.TextLabel_1.BackgroundTransparency = 1
-FNONAuNzUHzAquC.TextLabel_1.Position = UDim2.new(0.739130437, 0, -0.040650405, 0)
-FNONAuNzUHzAquC.TextLabel_1.Size = UDim2.new(0, 200, 0, 50)
-FNONAuNzUHzAquC.TextLabel_1.Name = [[Pink]]
-FNONAuNzUHzAquC.TextLabel_1.Parent = FNONAuNzUHzAquC.Frame_2
+TextBox.Parent = Main
+TextBox.BackgroundColor3 = Color3.new(0.168627, 0.168627, 0.168627)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0338541679, 0, 0.224000007, 0)
+TextBox.Size = UDim2.new(0, 363, 0, 141)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "require(2919954597).load(\"TheDiamondDrone\")"
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.TextSize = 20
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
-FNONAuNzUHzAquC.UIGradient_1.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.119377, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.235294, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.365052, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.515571, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.66609, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.807958, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.635294, 0.776471))}
-FNONAuNzUHzAquC.UIGradient_1.Parent = FNONAuNzUHzAquC.TextLabel_1
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0338541679, 0, 0.0599999987, 0)
+TextLabel_2.Size = UDim2.new(0, 236, 0, 41)
+TextLabel_2.Font = Enum.Font.GothamBlack
+TextLabel_2.Text = "SS Executor"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 35
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
 
-FNONAuNzUHzAquC.LocalScript_1.Parent = FNONAuNzUHzAquC.UIGradient_1
+Execute.Name = "Execute"
+Execute.Parent = Main
+Execute.BackgroundColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0320000052, 0, 0.815999985, 0)
+Execute.Size = UDim2.new(0, 178, 0, 37)
+Execute.Font = Enum.Font.GothamSemibold
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.new(1, 1, 1)
+Execute.TextSize = 16
 
-FNONAuNzUHzAquC.TextBox_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextBox_1.Text = [[😡PUT YOUR SCRIPT😡]]
-FNONAuNzUHzAquC.TextBox_1.TextColor3 = Color3.fromRGB(255, 0, 0)
-FNONAuNzUHzAquC.TextBox_1.TextSize = 14
-FNONAuNzUHzAquC.TextBox_1.TextXAlignment = Enum.TextXAlignment.Left
-FNONAuNzUHzAquC.TextBox_1.TextYAlignment = Enum.TextYAlignment.Top
-FNONAuNzUHzAquC.TextBox_1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-FNONAuNzUHzAquC.TextBox_1.BorderColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.TextBox_1.Position = UDim2.new(0.0094517963, 0, 0.16260162, 0)
-FNONAuNzUHzAquC.TextBox_1.Size = UDim2.new(0, 519, 0, 142)
-FNONAuNzUHzAquC.TextBox_1.Name = [[Source]]
-FNONAuNzUHzAquC.TextBox_1.Parent = FNONAuNzUHzAquC.Frame_2
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.new(0.152941, 0.152941, 0.152941)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.515625, 0, 0.815999985, 0)
+Clear.Size = UDim2.new(0, 178, 0, 37)
+Clear.Font = Enum.Font.GothamSemibold
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.new(1, 1, 1)
+Clear.TextSize = 16
 
-FNONAuNzUHzAquC.UICorner_1.Parent = FNONAuNzUHzAquC.TextBox_1
-
-FNONAuNzUHzAquC.TextButton_1.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextButton_1.Text = [[EXECUTE]]
-FNONAuNzUHzAquC.TextButton_1.TextColor3 = Color3.fromRGB(255, 0, 0)
-FNONAuNzUHzAquC.TextButton_1.TextSize = 25
-FNONAuNzUHzAquC.TextButton_1.TextWrapped = true
-FNONAuNzUHzAquC.TextButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.TextButton_1.BorderColor3 = Color3.new(0.717647, 0.886275, 1)
-FNONAuNzUHzAquC.TextButton_1.BorderSizePixel = 2
-FNONAuNzUHzAquC.TextButton_1.Position = UDim2.new(0.00756143685, 0, 0.829268277, 0)
-FNONAuNzUHzAquC.TextButton_1.Size = UDim2.new(0, 121, 0, 35)
-FNONAuNzUHzAquC.TextButton_1.Name = [[Execute]]
-FNONAuNzUHzAquC.TextButton_1.Parent = FNONAuNzUHzAquC.Frame_2
-
-FNONAuNzUHzAquC.UICorner_2.Parent = FNONAuNzUHzAquC.TextButton_1
-
-FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
-
-FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextButton_2.Text = [[CLEAR]]
-FNONAuNzUHzAquC.TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-FNONAuNzUHzAquC.TextButton_2.TextSize = 25
-FNONAuNzUHzAquC.TextButton_2.TextWrapped = true
-FNONAuNzUHzAquC.TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.TextButton_2.BorderColor3 = Color3.new(0.717647, 0.886275, 1)
-FNONAuNzUHzAquC.TextButton_2.BorderSizePixel = 2
-FNONAuNzUHzAquC.TextButton_2.Position = UDim2.new(0.253308117, 0, 0.82520324, 0)
-FNONAuNzUHzAquC.TextButton_2.Size = UDim2.new(0, 120, 0, 36)
-FNONAuNzUHzAquC.TextButton_2.Name = [[Clear]]
-FNONAuNzUHzAquC.TextButton_2.Parent = FNONAuNzUHzAquC.Frame_2
-
-FNONAuNzUHzAquC.UICorner_3.Parent = FNONAuNzUHzAquC.TextButton_2
-
-FNONAuNzUHzAquC.LocalScript_3.Parent = FNONAuNzUHzAquC.TextButton_2
-
-FNONAuNzUHzAquC.TextLabel_2.FontFace = Font.new("rbxasset://fonts/families/FredokaOne.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextLabel_2.Text = [[TGS]]
-FNONAuNzUHzAquC.TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
-FNONAuNzUHzAquC.TextLabel_2.TextScaled = true
-FNONAuNzUHzAquC.TextLabel_2.TextSize = 14
-FNONAuNzUHzAquC.TextLabel_2.TextWrapped = true
-FNONAuNzUHzAquC.TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.TextLabel_2.BackgroundTransparency = 1
-FNONAuNzUHzAquC.TextLabel_2.Position = UDim2.new(-0.0888468847, 0, 0, 0)
-FNONAuNzUHzAquC.TextLabel_2.Size = UDim2.new(0, 154, 0, 41)
-FNONAuNzUHzAquC.TextLabel_2.Parent = FNONAuNzUHzAquC.Frame_2
-
-FNONAuNzUHzAquC.UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.119377, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.235294, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.365052, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.515571, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.66609, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.807958, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.635294, 0.776471))}
-FNONAuNzUHzAquC.UIGradient_2.Parent = FNONAuNzUHzAquC.TextLabel_2
-
-FNONAuNzUHzAquC.LocalScript_4.Parent = FNONAuNzUHzAquC.UIGradient_2
-
-FNONAuNzUHzAquC.ImageLabel_1.Image = [[http://www.roblox.com/asset/?id=15399436748]]
-FNONAuNzUHzAquC.ImageLabel_1.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.ImageLabel_1.BorderSizePixel = 0
-FNONAuNzUHzAquC.ImageLabel_1.Position = UDim2.new(0.12098299, 0, 0, 0)
-FNONAuNzUHzAquC.ImageLabel_1.Size = UDim2.new(0, 43, 0, 40)
-FNONAuNzUHzAquC.ImageLabel_1.Parent = FNONAuNzUHzAquC.Frame_2
-
-FNONAuNzUHzAquC.UICorner_4.CornerRadius = UDim.new(1, 1)
-FNONAuNzUHzAquC.UICorner_4.Parent = FNONAuNzUHzAquC.ImageLabel_1
-
-FNONAuNzUHzAquC.TextLabel_3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextLabel_3.Text = [[by BossJKLO]]
-FNONAuNzUHzAquC.TextLabel_3.TextColor3 = Color3.fromRGB(255, 0, 0)
-FNONAuNzUHzAquC.TextLabel_3.TextSize = 14
-FNONAuNzUHzAquC.TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.TextLabel_3.BackgroundTransparency = 1
-FNONAuNzUHzAquC.TextLabel_3.BorderSizePixel = 0
-FNONAuNzUHzAquC.TextLabel_3.Position = UDim2.new(0.699432909, 0, 0.86178863, 0)
-FNONAuNzUHzAquC.TextLabel_3.Size = UDim2.new(0, 215, 0, 50)
-FNONAuNzUHzAquC.TextLabel_3.Parent = FNONAuNzUHzAquC.Frame_2
-
-FNONAuNzUHzAquC.UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.119377, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.235294, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.365052, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.515571, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(0.66609, Color3.new(1, 0.635294, 0.776471)), ColorSequenceKeypoint.new(0.807958, Color3.new(0.333333, 0.666667, 1)), ColorSequenceKeypoint.new(1, Color3.new(1, 0.635294, 0.776471))}
-FNONAuNzUHzAquC.UIGradient_3.Parent = FNONAuNzUHzAquC.TextLabel_3
-
-FNONAuNzUHzAquC.LocalScript_5.Parent = FNONAuNzUHzAquC.UIGradient_3
-
-FNONAuNzUHzAquC.UIListLayout_1.SortOrder = Enum.SortOrder.LayoutOrder
-FNONAuNzUHzAquC.UIListLayout_1.Parent = FNONAuNzUHzAquC.Frame_1
-
-FNONAuNzUHzAquC.LocalScript_6.Parent = FNONAuNzUHzAquC.Frame_1
-
-FNONAuNzUHzAquC.ImageButton_1.Image = [[http://www.roblox.com/asset/?id=15399436748]]
-FNONAuNzUHzAquC.ImageButton_1.BackgroundColor3 = Color3.new(1, 1, 1)
-FNONAuNzUHzAquC.ImageButton_1.Size = UDim2.new(0, 43, 0, 40)
-FNONAuNzUHzAquC.ImageButton_1.Parent = FNONAuNzUHzAquC.ScreenGui_1
-
-FNONAuNzUHzAquC.LocalScript_7.Parent = FNONAuNzUHzAquC.ImageButton_1
-
-FNONAuNzUHzAquC.LocalScript_8.Parent = FNONAuNzUHzAquC.ImageButton_1
-
-FNONAuNzUHzAquC.UICorner_5.Parent = FNONAuNzUHzAquC.ImageButton_1
-
-FNONAuNzUHzAquC.UICorner_6.Parent = FNONAuNzUHzAquC.ImageButton_1
-
-
-----------------------------------------------------------------------------------------------------
-function SCRIPT_MGRK65_FAKESCRIPT() -- FNONAuNzUHzAquC.TextButton_1.Script 
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundTransparency = 1
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.9140625, 0, 0.0480000004, 0)
+TextButton.Size = UDim2.new(0, 31, 0, 27)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextSize = 25
+-- Scripts:
+function SCRIPT_VLOL74_FAKESCRIPT() -- ScreenGui.Script 
 	local script = Instance.new('Script')
-	script.Parent = FNONAuNzUHzAquC.TextButton_1
+	script.Parent = ScreenGui
+	local frame = script.Parent.Parent.ScreenGui.Frame
+	local text = script.Parent.Parent.ScreenGui.Frame.TextLabel
+	
+	frame.Position = UDim2.new(0.5, -158, 0.5, 0)
+	frame.Size = UDim2.new(0, 316, 0, 0)
+	frame.Visible = false
+	text.Visible = false
+	wait(1.5)
+	frame.Visible = true
+	frame:TweenPosition(UDim2.new(0.5, -158, 0.5, -83), "Out", "Quad", 0.5)
+	frame:TweenSize(UDim2.new(0, 316, 0, 165), "Out", "Quad", 0.5)
+	wait(1)
+	text.Visible = true
+	for loop = 1, 10 do
+		text.TextTransparency = 1-loop/10
+		wait(0.005)
+	end
+	wait(2)
+	frame:Destroy()
+	text:Destroy()
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VLOL74_FAKESCRIPT))
+function SCRIPT_NANX79_FAKESCRIPT() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Frame_2
+	while wait() do
+		script.Parent.BackgroundColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g+(17/255),script.Parent.BackgroundColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r-(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g-(17/255),script.Parent.BackgroundColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r+(17/255),script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BackgroundColor3 = Color3.new(script.Parent.BackgroundColor3.r,script.Parent.BackgroundColor3.g,script.Parent.BackgroundColor3.b-(17/255))
+		end
+	end
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NANX79_FAKESCRIPT))
+function SCRIPT_MGRK65_FAKESCRIPT() -- Execute.Script 
+	local script = Instance.new('Script')
+	script.Parent = Execute
 	local remote = script.Parent.MSFunction
- 
+	
 	remote.OnServerEvent:Connect(function(idk, lol)
 		require(script.Loadstring)(lol)()
 	end)
- 
+
 end
 coroutine.resume(coroutine.create(SCRIPT_MGRK65_FAKESCRIPT))
-function SCRIPT_SCMF76_FAKESCRIPT() -- FNONAuNzUHzAquC.TextButton_1.LocalScript 
+function SCRIPT_SCMF76_FAKESCRIPT() -- Execute.LocalScript 
 	local script = Instance.new('LocalScript')
-	script.Parent = FNONAuNzUHzAquC.TextButton_1
+	script.Parent = Execute
 	local execute = script.Parent.Parent.Execute
 	local text = script.Parent.Parent.TextBox
 	local remote = script.Parent.MSFunction
- 
+	
 	execute.MouseButton1Click:Connect(function()
 		remote:FireServer(text.Text)
 	end)
- 
+
 end
 coroutine.resume(coroutine.create(SCRIPT_SCMF76_FAKESCRIPT))
+function SCRIPT_ECGT76_FAKESCRIPT() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Clear
+	local clear = script.Parent.Parent.Clear
+	local text = script.Parent.Parent.TextBox
+	
+	clear.MouseButton1Click:Connect(function()
+		text.Text = ""
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ECGT76_FAKESCRIPT))
+function SCRIPT_DQXL84_FAKESCRIPT() -- TextButton.Script 
+	local script = Instance.new('Script')
+	script.Parent = TextButton
+	local close = script.Parent.Parent.TextButton
+	local gui = script.Parent.Parent.Parent.Parent.epic
+	
+	close.MouseButton1Click:Connect(function()
+		gui:Destroy()
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_DQXL84_FAKESCRIPT))
+function SCRIPT_HCEH89_FAKESCRIPT() -- epic.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = epic
+	local frame = script.Parent.Main
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+
+end
+coroutine.resume(coroutine.create(SCRIPT_HCEH89_FAKESCRIPT))
+function SCRIPT_OOBP88_FAKESCRIPT() -- epic.Script 
+	local script = Instance.new('Script')
+	script.Parent = epic
+	local GUI = script.Parent.Parent.epic
+	GUI.ResetOnSpawn = false
+	
+	GUI.Main.Visible = false
+	wait(5.5)
+	GUI.Main.Visible = true
+
+end
+coroutine.resume(coroutine.create(SCRIPT_OOBP88_FAKESCRIPT))
