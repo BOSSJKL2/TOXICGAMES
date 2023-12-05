@@ -28,7 +28,7 @@ TextLabel.BackgroundTransparency = 1
 TextLabel.BorderSizePixel = 0
 TextLabel.Size = UDim2.new(0, 316, 0, 167)
 TextLabel.Font = Enum.Font.GothamSemibold
-TextLabel.Text = "😡TOXICGAMES SS😡"
+TextLabel.Text = "TOXICGAMES SS"
 TextLabel.TextColor3 = Color3.new(1, 1, 1)
 TextLabel.TextSize = 36
 TextLabel.TextWrapped = true
@@ -55,7 +55,7 @@ TextBox.Position = UDim2.new(0.0338541679, 0, 0.224000007, 0)
 TextBox.Size = UDim2.new(0, 363, 0, 141)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "require(6666666666).load(%"user"%)"
+TextBox.Text = "require(2919954597).load(\"tuberss930s\")"
 TextBox.TextColor3 = Color3.new(1, 1, 1)
 TextBox.TextSize = 20
 TextBox.TextWrapped = true
@@ -69,7 +69,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.0338541679, 0, 0.0599999987, 0)
 TextLabel_2.Size = UDim2.new(0, 236, 0, 41)
 TextLabel_2.Font = Enum.Font.GothamBlack
-TextLabel_2.Text = "TOXICGAMES😡SS"
+TextLabel_2.Text = "TGS"
 TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_2.TextSize = 35
 TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
@@ -82,7 +82,7 @@ Execute.BorderSizePixel = 0
 Execute.Position = UDim2.new(0.0320000052, 0, 0.815999985, 0)
 Execute.Size = UDim2.new(0, 178, 0, 37)
 Execute.Font = Enum.Font.GothamSemibold
-Execute.Text = "EXECUTE"
+Execute.Text = "Execute"
 Execute.TextColor3 = Color3.new(1, 1, 1)
 Execute.TextSize = 16
 
@@ -93,7 +93,7 @@ Clear.BorderSizePixel = 0
 Clear.Position = UDim2.new(0.515625, 0, 0.815999985, 0)
 Clear.Size = UDim2.new(0, 178, 0, 37)
 Clear.Font = Enum.Font.GothamSemibold
-Clear.Text = "CLEAR"
+Clear.Text = "Clear"
 Clear.TextColor3 = Color3.new(1, 1, 1)
 Clear.TextSize = 16
 
@@ -199,7 +199,6 @@ function SCRIPT_ECGT76_FAKESCRIPT() -- Clear.LocalScript
 	
 	clear.MouseButton1Click:Connect(function()
 		text.Text = ""
-
 	end)
 
 end
