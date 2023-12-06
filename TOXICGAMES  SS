@@ -70,7 +70,7 @@ FNONAuNzUHzAquC.UICorner_2.Parent = FNONAuNzUHzAquC.TextButton_1
 FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
 
 FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextButton_2.Text = [[b00sjkidd Gui]]
+FNONAuNzUHzAquC.TextButton_2.Text = [[b00sjkidd Gui KEY : MUMMONEYSCRIPT]]
 FNONAuNzUHzAquC.TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextButton_2.TextSize = 25
 FNONAuNzUHzAquC.TextButton_2.TextWrapped = true
@@ -315,7 +315,7 @@ end
 local function LocalScript_3(script)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/TestGUI/main/TESTGUIbJ"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/ProtectGui/main/ProtectGui"))()
 	end)
 	
 end
