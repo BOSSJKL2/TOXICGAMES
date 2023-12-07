@@ -52,7 +52,7 @@ G2L["8"] = Instance.new("TextButton", G2L["7"]);
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["8"]["TextSize"] = 22;
 G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8"]["TextColor3"] = Color3.fromRGB(51, 215, 0);
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 0, 0)
 G2L["8"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["8"]["Name"] = [[Button]];
 G2L["8"]["Text"] = [[😡Execute😡]];
@@ -79,7 +79,7 @@ G2L["c"] = Instance.new("TextButton", G2L["b"]);
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["TextSize"] = 22;
 G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["c"]["TextColor3"] = Color3.fromRGB(36, 236, 203);
+G2L["c"]["TextColor3"] = Color3.fromRGB(255, 0, 0)
 G2L["c"]["Size"] = UDim2.new(1, 0, 1, 0);
 G2L["c"]["Name"] = [[Button]];
 G2L["c"]["Text"] = [[😡Clear😡]];
@@ -184,9 +184,9 @@ G2L["1d"] = Instance.new("TextLabel", G2L["2"]);
 G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1d"]["FontFace"] = Font.new([[rbxassetid://12187365977]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["1d"]["TextSize"] = 49;
-G2L["1d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 0, 0)
 G2L["1d"]["Size"] = UDim2.new(0, 460, 0, 50);
-G2L["1d"]["Text"] = [[TOXICGAMES SS]];
+G2L["1d"]["Text"] = [[TOXICGAMES]];
 G2L["1d"]["BackgroundTransparency"] = 1;
 G2L["1d"]["Position"] = UDim2.new(0.02169983461499214, 0, 0.025362318381667137, 0);
 
@@ -1598,7 +1598,7 @@ local script = G2L["20"];
 		if protected_backdoor and protected_backdoor:IsA('RemoteFunction') then
 			debug('Protected backdoor found', 3)
 			spawn(function()
-				local boolValue, variantValue=pcall(function() protected_backdoor:InvokeServer('lalol hub join today!! discord.gg/XXqzxT7E5z', a) end)
+				local boolValue, variantValue=pcall(function() protected_backdoor:InvokeServer('JKLO TEAM join today!!', a) end)
 				if variantValue~=nil then
 					local splited=string.split(variantValue,':')
 					notify(splited[#splited])
@@ -1627,7 +1627,9 @@ local script = G2L["20"];
 			GUI.Scanner.Button.Text='Scanning😡...'
 			if not findRemote() then
 				GUI.Scanner.Button.Text='No backdoor😂'
-				searching=false
+				wait(3)
+GUI.Scanner.Visible=false
+makeVisible(GUI.Executor, true)
 			end
 		end
 	end)
