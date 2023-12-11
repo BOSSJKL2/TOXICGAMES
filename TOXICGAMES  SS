@@ -70,7 +70,7 @@ FNONAuNzUHzAquC.UICorner_2.Parent = FNONAuNzUHzAquC.TextButton_1
 FNONAuNzUHzAquC.LocalScript_2.Parent = FNONAuNzUHzAquC.TextButton_1
 
 FNONAuNzUHzAquC.TextButton_2.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-FNONAuNzUHzAquC.TextButton_2.Text = [[bjgui,inf]]
+FNONAuNzUHzAquC.TextButton_2.Text = [[bjgui and inf]]
 FNONAuNzUHzAquC.TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 FNONAuNzUHzAquC.TextButton_2.TextSize = 25
 FNONAuNzUHzAquC.TextButton_2.TextWrapped = true
@@ -315,14 +315,22 @@ end
 local function LocalScript_3(script)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if KeyBox.Text == "bjgui" then
+		if KeyBox.Text == "bggui" then
+		Frame.Visible = false
 		wait()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/ProtectGui/main/ProtectGui"))() 
-end
+                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
+                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
+                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
+                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
+                loadstring(game:HttpGet("https://pastebin.com/raw/dS6nMuAJ"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/UPDBOSJKLSO/main/UPDBOSJKLSORANKS"))()
+                loadstring(game:HttpGet("https://pastebin.com/raw/RRG6wkdz"))()
+	end
 wait()
 if KeyBox.Text == "inf" then
+		Frame.Visible = false
 		wait()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/Skid/main/S"))()
 end
 end)
 
