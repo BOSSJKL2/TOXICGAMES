@@ -317,7 +317,7 @@ local function LocalScript_3(script)
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/BOSSJKL2/ProtectGui/main/ProtectGui"))()
 wait(0.1)
-setclipboard("BJGUI😡48") 
+setclipboard("BJ🤬HAHA") 
 	end)
 	
 end
